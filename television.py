@@ -61,11 +61,11 @@ class Television:
         """Return string representation of the television."""
         if self.__status:
             if self.__muted:
-                return f"Power: ON\nChannel: {self.__channel}\nVolume: Muted"
+                return f"Power = ON, Channel = {self.__channel}, Volume = Muted"
             else:
-                return f"Power: ON\nChannel: {self.__channel}\nVolume: {self.__volume}"
+                return f"Power = ON, Channel = {self.__channel}, Volume = {self.__volume}"
         else:
-            return "Power: OFF\nChannel: -\nVolume: -"
+            return "Power = False, Channel = 0, Volume: 0"
 
         
         
